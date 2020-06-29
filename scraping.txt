@@ -1,0 +1,6 @@
+from tabelog_scraping import Tabelog
+
+shinjuku_review = Tabelog(base_url="https://tabelog.com/tokyo/A1304/A130401/rstLst/ramen/",test_mode=False, p_ward='新宿')
+
+# CSV保存
+shinjuku_review.df.to_csv("shinjuku_review_df.csv")
